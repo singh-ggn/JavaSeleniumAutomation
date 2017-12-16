@@ -1,0 +1,87 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Login into sales force",
+        "description": "",
+        "id": "login-into-application;login-into-sales-force",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 57995781772,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on O2UK Home Page",
+            "match": {
+              "location": "HomePageStepDefination.I_go_to_o2uk_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20887654044,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I Choose to buy iPhoneX",
+            "match": {
+              "location": "HomePageStepDefination.i_choose_to_buy()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 448034,
+              "error_message": "java.lang.NullPointerException\r\n\tat com.test.o2.pages.ProductDetailsPage.selectViewOurTariffs(ProductDetailsPage.java:12)\r\n\tat com.test.o2.stepdefination.productdetails.ProductDetailsStepDefination.i_choose_view_our_tariffs(ProductDetailsStepDefination.java:17)\r\n\tat ✽.And I Choose View our tariffs(src/test/resources/com/test/xyz/features/getBasketItemCount.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "I Choose View our tariffs",
+            "match": {
+              "location": "ProductDetailsStepDefination.i_choose_view_our_tariffs()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I Choose product tarrif insrance and accessories",
+            "match": {
+              "location": "ChooseYourTariffStepDefination.i_choose_product_tariff_and_accessorie()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I Choose to go to Basket",
+            "match": {
+              "location": "ChooseYourTariffStepDefination.I_choose_to_go_to_basket()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Login into application",
+    "description": "",
+    "id": "login-into-application",
+    "keyword": "Feature",
+    "uri": "src/test/resources/com/test/xyz/features/getBasketItemCount.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@run"
+      }
+    ]
+  }
+]
